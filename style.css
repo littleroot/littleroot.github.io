@@ -4,7 +4,7 @@ html {
 
 body {
 	margin: 0 auto;
-	padding: 1.61803398875em;
+	padding: 3.2360679775em;
 	color: #555;
 	line-height: 1.4;
 }
@@ -31,5 +31,11 @@ h1 {
 	padding: 4.85410196625em 1.61803398875em;
 	box-shadow: 0px 0px 10px 4px #eee;
 	display: inline-block;
+	transition: 300ms cubic-bezier(0.17, 0.89, 0.12, 1.49) transform;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	transition: 180ms cubic-bezier(0.17, 0.89, 0.12, 1.49) transform;
 }
 
