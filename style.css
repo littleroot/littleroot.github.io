@@ -20,6 +20,11 @@ body {
 	border-radius: 3px;
 }
 
+.tt {
+	font-family: Inconsolata, monospace;
+	letter-spacing: -.75px;
+}
+
 h1, p {
 	margin: 0;
 }
@@ -28,8 +33,6 @@ h1 {
 	margin-top: .80901699437em;
 	margin-bottom: .125em;
 	font-size: 1.8em;
-	font-family: Inconsolata, monospace;
-	letter-spacing: -1.2px;
 }
 
 .card {
