@@ -1,10 +1,16 @@
+:root {
+	--main-color: #555;
+	--link-color: rgba(68, 187, 255, 1);
+	--light-color: #ccc;
+}
+
 html {
 	font-family: ProximaNova, sans-serif;
 }
 
 body {
 	margin: 0 auto;
-	color: #555;
+	color: var(--main-color);
 	line-height: 1.4;
 	display: flex;
 	justify-content: center;
@@ -13,11 +19,15 @@ body {
 }
 
 .logo {
-	background-image: url("img/logo_256.png");
 	height: 128px;
 	width: 128px;
-	background-size: 128px;
 	border-radius: 3px;
+	pointer-events: none
+	-khtml-user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .tt {
@@ -47,3 +57,15 @@ h1 {
 	transition: 180ms cubic-bezier(0.17, 0.89, 0.12, 1.49) transform;
 }
 
+a {
+	text-decoration: none;
+	color: var(--main-color);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 6px;
+	background-image: linear-gradient(transparent, transparent 5px, var(--light-color) 5px, var(--light-color));
+}
+
+a:hover {
+	background-image: linear-gradient(transparent, transparent 4px, var(--link-color) 4px, var(--link-color));
+}
