@@ -10,6 +10,9 @@
 	--darktheme-lightest-color: #111;
 }
 
+::-moz-selection { background: rgba(1, 1, 1, .1); }
+::selection { background: rgba(1, 1, 1, .1); }
+
 html {
 	font-family: ProximaNova, sans-serif;
 }
@@ -78,6 +81,9 @@ a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
+	::-moz-selection { background: rgba(248, 248, 248, .1); }
+	::selection { background: rgba(248, 248, 248, .1); }
+
 	body {
 		color: var(--darktheme-main-color);
 		background: var(--darktheme-bg-color);
