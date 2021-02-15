@@ -3,11 +3,12 @@
 	--lighttheme-bg-color: #fff;
 	--lighttheme-light-color: #ccc;
 	--lighttheme-lightest-color: #eee;
-	--link-color: rgba(68, 187, 255, 1);
+	--lighttheme-link-color: rgba(68, 187, 255, 1);
 	--darktheme-main-color: #ccc;
 	--darktheme-bg-color: #1c1c1c;
 	--darktheme-light-color: #666;
 	--darktheme-lightest-color: #111;
+	--darktheme-link-color: rgb(37, 90, 121);
 }
 
 ::-moz-selection { background: rgba(1, 1, 1, .1); }
@@ -78,7 +79,7 @@ a {
 }
 
 a:hover {
-	background-image: linear-gradient(transparent, transparent 4px, var(--link-color) 4px, var(--link-color));
+	background-image: linear-gradient(transparent, transparent 4px, var(--lighttheme-link-color) 4px, var(--lighttheme-link-color));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,10 +97,10 @@ a:hover {
 
 	a {
 		color: var(--darktheme-main-color);
-		background-image: linear-gradient(transparent, transparent 5px, var(--link-color) 5px, var(--link-color));
+		background-image: linear-gradient(transparent, transparent 5px, var(--darktheme-link-color) 5px, var(--darktheme-link-color));
 	}
 
 	a:hover {
-		background-image: linear-gradient(transparent, transparent 5px, var(--link-color) 5px, var(--link-color));
+		background-image: linear-gradient(transparent, transparent 4px, var(--darktheme-link-color) 4px, var(--darktheme-link-color));
 	}
 }
