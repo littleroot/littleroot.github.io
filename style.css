@@ -14,14 +14,15 @@
 ::selection { background: rgba(1, 1, 1, .1); }
 
 html {
-	font-family: ProximaNova, sans-serif;
+	font-family: Inter, sans-serif;
+	font-size: 14px;
 }
 
 body {
 	margin: 0 auto;
 	color: var(--lighttheme-main-color);
 	background: var(--lighttheme-bg-color);
-	line-height: 1.4;
+	line-height: 1.5;
 	display: flex;
 	justify-content: center;
 	align-items: center;
