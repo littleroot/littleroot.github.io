@@ -23,7 +23,7 @@ body {
 	margin: 0 auto;
 	color: var(--lighttheme-main-color);
 	background: var(--lighttheme-bg-color);
-	line-height: 1.5;
+	line-height: 1.4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -56,9 +56,11 @@ h1 {
 	margin-bottom: .125em;
 	font-size: 1.8em;
 	font-weight: 600;
+	letter-spacing: -.3px;
 }
 
 .card {
+	width: 186.112px;
 	padding: 4.85410196625em 1.61803398875em;
 	box-shadow: 0px 0px 10px 4px var(--lighttheme-lightest-color);
 	display: inline-block;
@@ -81,6 +83,10 @@ a {
 
 a:hover {
 	background-image: linear-gradient(transparent, transparent 4px, var(--lighttheme-link-color) 4px, var(--lighttheme-link-color));
+}
+
+.email {
+	margin-top: .5em;
 }
 
 @media (prefers-color-scheme: dark) {
